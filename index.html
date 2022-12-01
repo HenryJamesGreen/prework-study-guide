@@ -14,24 +14,57 @@
         src="./assets/bowtie-cat.png"
         alt="Profile image of cat wearing a bow tie."
       />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
           <li>
-            The body element represents the visible content shown to the user
+            &lt!DOCTYPE html&gt - tells the browser what document type it should
+            expect when opened. Declarations are not case-sensitive; HTML
+            elements are case-sensitive.
           </li>
+          <li>
+            &ltHTML&gt - root, or start of HTML document. Inside is the
+            lang=“en” - tells the browser the language for the webpage. An HTML
+            attribute defines additional info about an element. HTML attributes
+            are always defined in the beginning element, never the closing one.
+          </li>
+          <li>
+            &ltHead&gt - Contains the metadata for the web application. Contains
+            important info about accessibility, search engines and performance.
+            Inside the &lthead&gt, we can use the following metadata tags:
+            <ul>
+              <li>&lttitle&gt - extremely important for SEO.</li>
+              <li>&ltstyle&gt - defines the CSS associated with a website.</li>
+              <li>&ltbase&gt - defines the base URL for a webpage.</li>
+              <li>
+                &ltlink&gt - connects an external resource to the HTML document.
+              </li>
+              <li>&ltmeta&gt - defines metadata such as the character set, description, keywords, author and viewport (more - <a href=https://www.w3schools.com/tags/tag_meta.asp target="_blank">w3schools</a></li>
+              <li>&ltscript&gt -  embeds client-side scripts in the HTML document.</li>
+              <li>&ltcharset&gt - character set.</li>
+            </ul>
+          </li>
+          <li>
+            The body element represents the visible content shown to the user.
+          </li>
+          <ul>
+            <li>&lth1&gt - heading 1 - headings are important! Make sure they are ordered. This will determine size, and affect accessibility</li>
+            <li>&ltp&gt - paragraph.</li>
+            <li>&ltul&gt - unordered list (bullet).</li>
+            <li>&ltol&gt - ordered list.</li>
+            <li>&ltli&gt - list items.</li>
+            <li>&ltimg&gt - image. The 'alt' attribute contains a text string that describes the appearance and functionality of the image. This is useful for screen reader technology, as well as SEO.</li>
+            <li>&ltsrc&gt - source.</li>
+            <li>&ltbr&gt - line break.</li>
+            <li>&lta&gt - anchor - links to sme webpage or other webpages - &lthref&gt - points to URL</li>
+          </ul>
           <li>
             An element refers to the type of content on a webpage. Common
             elements include text elements, image elements, header elements and
             list elements
-          </li>
-          <li>
-            Common elements used to divide and describe a page (head) include
-            meta-related elements, content division elements and semantic
-            elements.
           </li>
         </ul>
       </section>
@@ -186,7 +219,120 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>
+            A variable - a named container that allows us to store data in our
+            code.
+          </li>
+          <li>
+            Control flow - the order in which a computer executes code in a
+            script.
+          </li>
+          <li>
+            Declare a variable - var keyword. After var, we give the variable a
+            name. Must be unique, as it is how we will reference the information
+            stored in the variable within our code.
+          </li>
+          <li>
+            Operators - a mathematical symbol that produces a result based on
+            two values (+,-,*,/)
+          </li>
+          <li>
+            = - assignment operator - assigns the specific data that we want
+            stored in our variable.
+          </li>
+          <li>
+            === - Strict equality - performs a test to see if two values are
+            equal. Returns a boolean result.
+          </li>
+          <li>
+            (!,!==) - Not, Does-not-equal - returns the logically opposite value
+            of what it precedes. When used alongside an equality operator, the
+            negation operator tests whether two values are not equal (so
+            basically, the question is “is myVariable NOT equal to 3”, will
+            return false if myVariable IS qual to 3).
+          </li>
+          <li>
+            Console - refers to a test environment that developers use to check
+            out their code. .log() - a method, which means a set of instructions
+            that can be executed by a computer. Will output anything we put in
+            the parenthesis to the console.
+          </li>
+          <li>
+            In the html file, add a link, such as &ltscript
+            src=“./assets/script.js” &gt; between the footer and body element
+          </li>
+          <li>
+            If statement - introduces decision-making into our code. Conditions
+            must be met (ie'if'). The computer will approach the if statement
+            and check whether the condition is truthy. If yes, it will do what's
+            inside {}, if no, it'll ignore and move on.
+          </li>
+          <li>
+            Truthy - all other data types, including Boolean with the value of
+            true.
+          </li>
+          <li>
+            Falsy value - 0, -0, On, “”, null, undefined, NaN, or a Boolean data
+            type with the value of false.
+          </li>
+          <li>
+            Else if - sometimes we want to have more conditions than just if.
+          </li>
+          <li>
+            Boolean === checks to see if two values are equal, and returns a
+            Boolean result.
+          </li>
+          <li>
+            Array - a single variable that is used to hold a group of data.
+          </li>
+          <li>
+            To create an array, we declare a variable in the same way as
+            previous, but assign the variable to a group of values.
+          </li>
+          <li>
+            Arrays are not restricted to a single type of data. Strings,
+            numbers, and more can be stored too.
+          </li>
+          <li>
+            A for loop - uses the predictable pattern of indices to perform a
+            task on all the items in an array by allowing a single code block to
+            be executed over and over. Developers must use another statement to
+            interrupt the control flow by executing a block of code a specific
+            number of times.
+          </li>
+          <li>
+            In order to use the for loop: 1. Shape's index 2. Array's length -
+            how many times it'll run before there are no items left in the
+            array. Can find it's length by using a built-in property of an
+            array, named 'length'.
+          </li>
+          <li>
+            For loop statements - 1 - Starting point for our loop. Declare a
+            variable x and give it a value of 0 (var x = 0;). 2 - The condition
+            - As long as the number in the variable x is less than the length of
+            the array, the loop will keep running. This will allow the loop to
+            execute one time for each item in the array. We use the length
+            property on our shapes array to express that condition. Instructing
+            the computer to repeat our code as long as our variable x is less
+            than the length of the shape's array (x &lt shapes.length;). 3 -
+            Allows the array to iterate over each item. Some indices follow a
+            predictable pattern, we know the number increases by 1 each time.
+            The code x++ is a shortcut way of writing x+1. Now every time the
+            code loops, x will increase by 1 (for(var x = 0; x &lt
+            shapes.length; x++) { //code block } ). Finally, we put the code we
+            want to be executed inside the {}. In our case,. We want the shapes
+            to be logged in the console. In place of an actual index number, we
+            can add the variable x from our for loop (for(var x = 0; x &lt
+            shapes.length; x++) { Console.log(shapes[x]); })
+          </li>
+          <li>
+            Functions - In most basic form - a set of instructions that tells
+            the computer how to perform a certain task. Differs from a for loop
+            or conditional statement - does not automatically execute when the
+            JavaScript file is run. Instead, you must call a function by name in
+            order to execute it.
+          </li>
+          <li></li>
         </ul>
       </section>
     </main>
@@ -194,5 +340,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
